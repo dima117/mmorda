@@ -12,8 +12,15 @@
         <style>
             .xxx
             {
-                margin-bottom: 72px;
+                margin-bottom: 72px !important;
             }
+
+            .xxx-small
+            {
+                margin-bottom: 42px;
+            }
+
+            .jumbotron { margin-bottom: 0; }
 
             .logo
             {
@@ -22,7 +29,43 @@
                 opacity: 0.8;
             }
 
-            .хрень {
+            .logo2
+            {
+                display: block;
+                margin-left: 50%;
+                margin-top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .photo
+            {
+                width: 110px;
+                height: 110px;
+                border-radius: 50%;
+                display: block;
+                margin: 22px auto 42px auto;
+            }
+
+            .qqq
+            {
+                font-size: 85%;
+                font-style: italic;
+            }
+
+            footer {
+                background-color: #333;
+                color: #ddd;
+                font-weight: 100;
+                font-size: 80%;
+                padding: 42px 0;
+            }
+
+            footer a {
+                color: #ccc;
+            }
+
+            .хрень
+            {
                 border-bottom: 1px dashed #f66;
             }
         </style>
@@ -81,7 +124,7 @@
                 <a class="btn btn-primary btn-lg" href="#" role="button">Узнать подробнее</a>
             </p>
         </section>
-        <section class="jumbotron xxx ">
+        <section class="jumbotron xxx">
             <div class="container">
                 <h2 class="text-xs-center">Основные идеи</h2>
                 <p class="lead text-xs-center xxx">
@@ -131,5 +174,128 @@
                 </p>
             </div>
         </section>
+        <section class="text-xs-center">
+            <div class="container">
+
+                <h2 class="text-xs-center xxx-small">Мнение экспертов</h2>
+                <div class="row xxx-small">
+                    <div class="col-md-3">
+                        <strong>Harry Roberts</strong>
+                        <p>Consultant Front-end<br/>Architect</p>
+                        <img class="photo" alt="Harry Roberts" src="https://ru.bem.info/N454CbD_KkntApgtVsiN_5hscGc.jpg">
+                        <p class="qqq">
+                            <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">
+                                I use BEM notation on everything I build now as its usefulness has proved itself over and over.
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <strong>Mark McDonnell</strong>
+                        <p>Technical Lead,<br/>BBC News</p>
+                        <img class="photo" alt="Mark McDonnell" src="https://ru.bem.info/4w21aFgvgecwx89RJfObNL9DKNg.jpg">
+                        <p class="qqq">
+                            <a href="http://www.integralist.co.uk/posts/bem.html">
+                                Itʼs less confusing than the other methods (i.e. SMACSS) but still provides us the good architecture we want (i.e. OOCSS) and with a recognisable terminology.
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <strong>Connie Chan</strong>
+                        <p>Design Director,<br/>Thoughtbot</p>
+                        <img class="photo" alt="Connie Chan" src="https://ru.bem.info/STynlruYfYWtZVjCkWsBdXLf3Q0.jpg">
+                        <p class="qqq">
+                            <a href="https://robots.thoughtbot.com/keeping-the-frontend-modular-with-bem">
+                                Combined with a preprocessor, BEM makes keeping your CSS modular and object-oriented a breeze.
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <strong>Necolas Gallagher</strong>
+                        <p>Software Engineer,<br/>Twitter</p>
+                        <img class="photo" alt="Necolas Gallagher" src="https://ru.bem.info/ICngDZJS-VIGn7mNdRAMWknFBQw.jpg">
+                        <p class="qqq">
+                            <a href="https://twitter.com/necolas/status/192678667023949824">
+                                BEM is far more than a HTML/CSS system. Iʼve got no plans to use it all; just adapted some of its ideas.
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-xs-center">
+            <div class="container">
+                <h2 class="text-xs-center">Где используют БЭМ</h2>
+                <div class="row">
+                    <div class="col-md-2">
+                        <img class="logo2" alt="Яндекс" src="https://ru.bem.info/mfQvxAJdbBl6DJZpsHKKwtoun5Y.svg">
+                    </div>
+                    <div class="col-md-2">
+                        <img class="logo2" alt="Google" src="https://ru.bem.info/C03CDcCgB7WjWXKVv4whpMskBLI.svg">
+                    </div>
+                    <div class="col-md-2">
+                        <img class="logo2" alt="BBC" src="https://ru.bem.info/PrGFBoNNsXmAr5ctIjVODcLAyPc.svg">
+                    </div>
+                    <div class="col-md-2">
+                        <img class="logo2" alt="Aplha-Bank" src="https://ru.bem.info/rt8CY7JZ2hoZG-PAa_y3FKFOv4o.svg">
+                    </div>
+                    <div class="col-md-2">
+                        <img class="logo2" alt="BuzzFeed" src="https://ru.bem.info/6Ls8Q7yqeM6MJBuQ-ubPhlWGtgw.svg">
+                    </div>
+                    <div class="col-md-2">
+                        <img class="logo2" alt="EPAM" src="https://ru.bem.info/aHEJs4kK1s8Vl0VMgywi5X-btLc.svg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="jumbotron">
+            <div class="container">
+                <h2 class="text-xs-center xxx-small">Эксперты рекомендуют, все используют,<br/>попробуйте и вы!</h2>
+                <p class="text-xs-center">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Узнать подробнее</a>
+                </p>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>Методология</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Быстрый старт</a></li>
+                            <li><a href="#">БЭМ-сущности</a></li>
+                            <li><a href="#">Сборка</a></li>
+                            <li><a href="#">Правила именования</a></li>
+                            <li><a href="#">История появления</a></li>
+                            <li><a href="#">F.A.Q.</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Инструменты</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">bemhint</a></li>
+                            <li><a href="#">SDK</a></li>
+                            <li><a href="#">ENB</a></li>
+                            <li><a href="#">Поддержка в IDE</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Платформа</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">bem-xjst</a></li>
+                            <li><a href="#">i-bem</a></li>
+                            <li><a href="#">bem-components</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Сообщество</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">События</a></li>
+                            <li><a href="#">Форум</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
